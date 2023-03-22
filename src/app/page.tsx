@@ -33,7 +33,7 @@ export default function Home() {
         <If condition={typeof journals !== "undefined" && journals.length > 0}>
           <Then>
             {journals?.map((journal, i, { length }) => (
-              <JournalListItem {...journal} last={length - 1 === i && true} />
+              <JournalListItem key={i} {...journal} last={length - 1 === i && true} />
             ))}
           </Then>
           <Else>

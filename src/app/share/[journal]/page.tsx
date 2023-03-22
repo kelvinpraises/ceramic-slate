@@ -1,5 +1,6 @@
 "use client";
 
+
 import { styled } from "styled-components";
 
 import SharedJournalContent from "@/components/SharedJournalContent";
@@ -11,7 +12,7 @@ export default function Journal({
   searchParams,
 }: {
   params: { journal: string };
-  searchParams: { [key: string]: string | string[] };
+  searchParams?: { [key: string]: string | string[] };
 }) {
   const bgState = useStore((state) => state.setBackgroundState);
 
@@ -21,7 +22,7 @@ export default function Journal({
 
   return (
     <SMain>
-      <SharedJournalContent params={params} searchParams={searchParams} />
+      <SharedJournalContent params={params} searchParams={searchParams!} />
     </SMain>
   );
 }

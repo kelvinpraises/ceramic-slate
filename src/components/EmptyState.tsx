@@ -15,7 +15,7 @@ const EmptyState = () => {
           Hey 👋 there, welcome to Slate!
         </h2>
         <p style={{ fontSize: "1.5rem", textAlign: "center" }}>
-          click the 'Create Journal' button to get started
+          click the &apos;Create Journal&apos; button to get started
         </p>
       </SContent>
     </SEmptyState>

@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   // useStore.setState({ showBg: true });
 
-  const ceramic = useStore((state) => state.body);
+  const ceramic = useStore((state) => state.ceramic);
   const pathname = usePathname();
 
   const guard = {
